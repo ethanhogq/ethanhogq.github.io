@@ -125,10 +125,6 @@
     font-size: 120%;
   }
 
-  .btn-app img {
-    width: 70%;
-  }
-
   .app-screen {
     width: 40%;
   }
@@ -136,17 +132,29 @@
   .social-links {
     float: inherit;
   }
+
+  .meals-showcase li {
+    display: block;
+    width: 100%;
+    float: none;
+  }
 }
 
 /* Small phones */
 @media only screen and (max-width: 480px) {
   section {
-    padding: 25% 0;
+    padding: 25% 0 0 0;
   }
   .contact-form {
     width: 100%;
   }
   .social-links {
     float: inherit;
+  }
+  .meals-showcase li {
+    display: block;
+    width: 100%;
+    float: none;
+    margin-top: 1px;
   }
 }
