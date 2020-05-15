@@ -54,7 +54,7 @@ a:active {
 /* Headers */
 /* --------------------------------------------- */
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("https://images.apple.com/ca/retail/storelist/images/hero_michiganave_large.jpg");
   background-size: cover;
   background-position: center;
