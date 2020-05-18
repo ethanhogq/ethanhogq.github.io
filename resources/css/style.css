@@ -105,13 +105,13 @@ header {
 }
 .logo {
   float: left;
-  margin-top: 10px;
+  margin-top: 2px;
 }
 
 .main-nav {
   float: right;
   list-style: none;
-  margin-top: 18px;
+  margin-top: 10px;
 }
 
 .main-nav li {
@@ -133,6 +133,28 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
   border-bottom: 1px solid #e67e22;
+}
+
+.mobile-nav-icon {
+  float: right;
+  margin-top: 11px;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-icon i {
+  font-size: 200%;
+  color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(2px);
+  z-index: 9999;
 }
 
 .btn:link,
@@ -222,7 +244,7 @@ h2:after {
   height: 2px;
   background-color: #e67e22;
   content: "";
-  width: 500px;
+  width: 80%;
   margin: 0 auto;
   margin-top: 30px;
 }
@@ -461,6 +483,10 @@ cite img {
   margin-left: 5%;
   box-shadow: 0 2px 2px #e9e9e9;
   transition: box-shadow 0.2s;
+  -webkit-transition: box-shadow 0.2s;
+  -moz-transition: box-shadow 0.2s;
+  -ms-transition: box-shadow 0.2s;
+  -o-transition: box-shadow 0.2s;
 }
 
 .plan-box:hover {
@@ -612,4 +638,16 @@ footer p {
   font-size: 80%;
   margin-top: 20px;
   line-height: 1.5;
+}
+
+/* --------------------------------------------- */
+/* Animations */
+/* --------------------------------------------- */
+
+.js--wp-1 {
+  opacity: 0;
+}
+
+.js-wp-1.animate {
+  opacity: 1;
 }

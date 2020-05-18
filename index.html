@@ -12,8 +12,13 @@
       type="text/css"
       href="vendors/css/ionicons.min.css"
     />
+
     <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
     <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
+    <link
+      rel="style sheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
     <title>Omnifood</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,11 +32,14 @@
             alt="Apple logo"
             class="logo"
           />
-          <ul class="main-nav">
-            <li><a href="#">Locations</a></li>
+          <ul class="main-nav js--main-nav">
+            <li><a class="js--scroll-to-location" href="#">Locations</a></li>
             <li><a href="#">What we do</a></li>
-            <li><a href="#">Contact us</a></li>
+            <li><a class="js--scroll-to-contact" href="#">Contact us</a></li>
           </ul>
+          <a class="mobile-nav-icon js--nav-icon"
+            ><i class="ion-navicon-round"></i
+          ></a>
         </div>
       </nav>
       <div class="hero-text-box">
@@ -39,15 +47,15 @@
           Apple Retail.<br />
           The best place to buy Apple Products.
         </h1>
-        <a class="btn btn-full" href="#">Let's see</a>
-        <a class="btn btn-ghost" href="#">Show me why</a>
+        <a class="btn btn-full js--scroll-to-why" href="#">Let's see</a>
+        <a class="btn btn-ghost js-scroll-to-start" href="#">Show me why</a>
       </div>
       <a class="caption" href="https://www.apple.com/retail/michiganavenue/"
         >Apple Michigan Center</a
       >
     </header>
 
-    <section class="section-features">
+    <section class="section-features js--section-features">
       <div class="row">
         <h2>Get your device fast &mdash; and a fast device</h2>
         <p class="long-copy">
@@ -148,7 +156,7 @@
         <h2>How it works &mdash; Simple as 1, 2, 3</h2>
       </div>
       <div class="row">
-        <div class="col span-1-of-2 steps-box">
+        <div class="col span-1-of-2 steps-box js--wp-1">
           <img
             src="resources/img/IMG_0611.JPEG"
             alt="iPhone screenshot"
@@ -187,7 +195,7 @@
       </div>
     </section>
 
-    <section class="section-cities">
+    <section class="section-cities js--section-location">
       <div class="row">
         <h2>We're currently in these cities</h2>
       </div>
@@ -397,7 +405,7 @@
       </div>
     </section>
 
-    <section class="selection-form">
+    <section class="selection-form js--section-contact">
       <div class="row">
         <h2>We're happy to hear from you</h2>
       </div>
@@ -508,5 +516,8 @@
         </p>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/javascript/script.js"></script>
   </body>
 </html>

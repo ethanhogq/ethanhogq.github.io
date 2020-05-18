@@ -90,7 +90,46 @@
   }
 
   .main-nav {
+    float: left;
+    margin-top: 25px;
+    margin-left: 25px;
     display: none;
+  }
+
+  .mobile-nav-icon {
+    display: inline-block;
+  }
+
+  .main-nav li {
+    display: block;
+    border: 0;
+    margin-top: 20px;
+  }
+
+  .main-nav li:first-of-type {
+    margin-top: 5px;
+  }
+
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    display: block;
+  }
+
+  .sticky .main-nav {
+    margin-top: 5px;
+  }
+
+  .sticky .main-nav li a:link,
+  .sticky .main-nav li a:visited {
+    padding: 5px 0;
+    border-bottom: 0;
+  }
+
+  .sticky .main-nav li a:last-of-type {
+    margin-bottom: 10px;
+  }
+  .sticky .mobile-nav-icon i {
+    color: #555;
   }
 
   h1 {
